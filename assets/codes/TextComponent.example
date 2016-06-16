@@ -1,0 +1,9 @@
+import React from 'react';
+import { AppRegistry, Image } from 'react-native';
+
+const App = () => (
+  <Image source={require('./img/check.png')} />
+);
+
+
+AppRegistry.registerComponent('MyApp', () => App);

@@ -32,13 +32,13 @@ require("spectacle/lib/themes/default/index.css");
 
 
 const images = {
-  city: require("../assets/city.jpg"),
-  kat: require("../assets/kat.png"),
-  logo: require("../assets/formidable-logo.svg"),
-  markdown: require("../assets/markdown.png"),
   reactNative: require("../assets/react-native.png"),
   reactNativeGithub: require("../assets/github.png"),
-  reactNativeNpm: require("../assets/npm.png")
+  reactNativeNpm: require("../assets/npm.png"),
+  redbox: require("../assets/redbox.png"),
+  devOptions: require("../assets/devopts.png"),
+  console: require("../assets/console.png"),
+  pauseOnError: require("../assets/pause-on-error.png")
 };
 
 preloader(images);
@@ -200,7 +200,7 @@ export default class Presentation extends React.Component {
                 Implemented via <Link href="https://github.com/facebook/css-layout">css-layout</Link>
               </ListItem></Appear>
               <Appear><ListItem>style props accept array</ListItem></Appear>
-              <Appear><ListItem>style props falsy values</ListItem></Appear>
+              <Appear><ListItem>style props accept falsy values</ListItem></Appear>
               <Appear><ListItem><Link href="https://facebook.github.io/react-native/docs/style.html">docs</Link></ListItem></Appear>
             </List>
           </Slide>
@@ -225,6 +225,90 @@ export default class Presentation extends React.Component {
               margin="20px auto"
               textSize="0.8em"
             />
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={3} lineHeight={1} textColor="black">
+              <Text>Text Component</Text>
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../assets/codes/TextComponent.example")}
+              margin="20px auto"
+              textSize="0.8em"
+            />
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={3} lineHeight={1} textColor="black">
+              <Text>View Component</Text>
+              <Text>(just like div, UIView)</Text>
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../assets/codes/ViewComponent.example")}
+              margin="20px auto"
+              textSize="0.8em"
+            />
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={3} lineHeight={1} textColor="black">
+              <Text textSize="1.5em">Debugging</Text>
+            </Heading>
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={3} lineHeight={1} textColor="black">
+              <Text>When error thrown in render...</Text>
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../assets/codes/render-error.example")}
+              margin="20px auto"
+              textSize="0.8em"
+            />
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={5} lineHeight={1} textColor="black">
+              <Text>Red Box</Text>
+            </Heading>
+            <Image src={images.redbox.replace("/", "")} margin="0px auto 40px" height="593px"/>
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={3} lineHeight={1} textColor="black">
+              <Text textSize="1em">Keymaps</Text>
+            </Heading>
+            <List>
+              <ListItem>Cmd+R - Reload</ListItem>
+              <ListItem>Cmd+D - Toggle development options</ListItem>
+              <ListItem>Cmd+Ctrl+Z - Shaking device</ListItem>
+            </List>
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={5} lineHeight={1} textColor="black">
+              <Text>Development Options</Text>
+            </Heading>
+            <Image src={images.devOptions.replace("/", "")} margin="0px auto 40px" height="593px"/>
+          </Slide>
+           <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={3} lineHeight={1} textColor="black">
+              <Text textSize="1em">Remote JS Debugging (chrome v8)</Text>
+            </Heading>
+            <List>
+              <ListItem>open http://localhost:8081/debugger-ui</ListItem>
+              <ListItem>can print something to console</ListItem>
+              <ListItem>can see thrown errors</ListItem>
+              <ListItem>can pause on exceptions</ListItem>
+            </List>
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={5} lineHeight={1} textColor="black">
+              <Text>Debugging Console</Text>
+            </Heading>
+            <Image src={images.console.replace("/", "")} margin="0px auto 40px" width="1024px"/>
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={5} lineHeight={1} textColor="black">
+              <Text>Pause on Exceptions</Text>
+            </Heading>
+            <Image src={images.pauseOnError.replace("/", "")} margin="0px auto 40px" width="1024px"/>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
             <Heading size={3} fit lineHeight={1} textColor="black">
@@ -300,14 +384,13 @@ export default class Presentation extends React.Component {
             </Heading>
             <List>
               <ListItem>
-                <Link href="https://facebook.github.io/react-native/docs/getting-started.html
-">Official Docs</Link>
+                <Link href="https://facebook.github.io/react-native/docs/getting-started.html">Official Docs</Link>
               </ListItem>
               <ListItem>
                 <Link href="http://reactnative.cn/docs/0.27/getting-started.html">簡中文件</Link>
               </ListItem>
               <ListItem>
-                <Link href="">Awesome React Native</Link>
+                <Link href="https://github.com/jondot/awesome-react-native">Awesome React Native</Link>
               </ListItem>
               <ListItem>
                 <Link href="https://rnplay.org/">RN playground</Link>
@@ -318,9 +401,23 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
-            <Heading size={3} fit lineHeight={1} textColor="black">
-              <Text>Demo</Text>
+            <Heading size={3} lineHeight={1} textColor="black">
+              <Text textSize="1.5em">Demo</Text>
             </Heading>
+            <List>
+              <ListItem>
+                <Link href="https://github.com/facebook/react-native/tree/master/Examples/UIExplorer">UIExplorer</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="https://github.com/facebook/react-native/tree/master/Examples/2048">2048</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="https://github.com/facebook/react-native/tree/master/Examples/Movies">Movie</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="https://github.com/fbsamples/f8app">f8app</Link>
+              </ListItem>
+            </List>
           </Slide>
           <Slide transition={["slide", "spin"]} bgColor="primary">
             <Heading caps size={1} textColor="tertiary">

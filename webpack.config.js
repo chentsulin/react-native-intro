@@ -13,7 +13,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "/react-native-intro/dist/"
+    publicPath: "/dist/"
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

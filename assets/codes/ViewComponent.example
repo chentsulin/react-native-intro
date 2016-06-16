@@ -1,0 +1,10 @@
+import React from 'react';
+import { AppRegistry, Text, View } from 'react-native';
+
+const App = () => (
+  <View style={{alignItems: 'center'}}>
+    <Text>Hello!</Text>
+  </View>
+);
+
+AppRegistry.registerComponent('MyApp', () => App);
