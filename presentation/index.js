@@ -398,6 +398,41 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={3} lineHeight={1} textColor="black">
+              <Text textSize="1.5em">Navigator</Text>
+              <Text>(just like routing)</Text>
+            </Heading>
+            <List>
+              <ListItem>
+                <Link href="https://facebook.github.io/react-native/docs/navigator.html">Navigator</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="https://github.com/exponentjs/ex-navigator">ex-navigator </Link>(built on top of Navigator)
+              </ListItem>
+              <ListItem>
+                <Link href="https://github.com/aksonov/react-native-router-flux">react-native-router-flux</Link>(built on top of ExNavigator)
+              </ListItem>
+              <ListItem>
+                <Link href="https://github.com/ericvicenti/navigation-rfc">NavigationExperimental</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="https://github.com/exponentjs/ex-navigation">ex-navigation</Link> (built on top of NavigationExperimental)
+              </ListItem>
+            </List>
+          </Slide>
+          <CodeSlide
+            transition={[]}
+            lang="js"
+            code={require("raw!../assets/codes/Navigator.example")}
+            ranges={[
+              { loc: [0, 20], title: "Navigator" },
+              { loc: [1, 2], note: "Assign initial route." },
+              { loc: [2, 3], note: "Render component by route." },
+              { loc: [7, 11], note: "Push next route." },
+              { loc: [14, 15], note: "Pop prev route." }
+            ]}
+          />
+          <Slide transition={["zoom"]} bgColor="primary">
             <Heading size={3} fit lineHeight={1} textColor="black">
               <Text>Work together with Redux</Text>
             </Heading>

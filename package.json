@@ -1,7 +1,7 @@
 {
-  "name": "spectacle-boilerplate",
+  "name": "react-native-intro",
   "version": "1.0.1",
-  "description": "ReactJS Powered Presentation Framework",
+  "description": "An introduction to react native",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf dist",
