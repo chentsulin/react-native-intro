@@ -1,0 +1,9 @@
+react-native init AwesomeProject
+cd AwesomeProject
+
+/* Run iOS */
+react-native run-ios
+
+/* Run Android */
+emulator -avd [your_emulator_name] -gpu on &
+react-native run-android

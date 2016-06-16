@@ -1,0 +1,20 @@
+const styles = StyleSheet.create({
+  base: {
+    width: 38,
+    height: 38,
+  },
+  background: {
+    backgroundColor: '#222222',
+  },
+  active: {
+    borderWidth: 2,
+    borderColor: '#00ff00',
+  },
+});
+
+<Text style={styles.base} />
+<View style={styles.background} />
+
+<View style={[styles.base, styles.background]} />
+
+<View style={[styles.base, this.state.active && styles.active]} />
