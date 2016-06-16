@@ -38,7 +38,9 @@ const images = {
   redbox: require("../assets/redbox.png"),
   devOptions: require("../assets/devopts.png"),
   console: require("../assets/console.png"),
-  pauseOnError: require("../assets/pause-on-error.png")
+  pauseOnError: require("../assets/pause-on-error.png"),
+  rnplay: require("../assets/rnplay.png"),
+  rnplayApp: require("../assets/rnplay-app.png")
 };
 
 preloader(images);
@@ -256,7 +258,7 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
             <Heading size={3} lineHeight={1} textColor="black">
-              <Text>When error thrown in render...</Text>
+              <Text>When error thrown...</Text>
             </Heading>
             <CodePane
               lang="jsx"
@@ -309,6 +311,33 @@ export default class Presentation extends React.Component {
               <Text>Pause on Exceptions</Text>
             </Heading>
             <Image src={images.pauseOnError.replace("/", "")} margin="0px auto 40px" width="1024px"/>
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={3} fit lineHeight={1} textColor="black">
+              <Text>Other bulit-in Components</Text>
+            </Heading>
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <iframe
+              style={{width: "536px", height: "632px"}}
+              src="https://appetize.io/embed/p8mafjj1hgkv96dcwgqr1qwppw?device= iphone6&amp;scale=100&amp;autoplay=true&amp;orientation=portrait&amp;deviceColor=black"
+              frameBorder="0"
+              scrolling="no"
+              width="536px"
+              height="632px"
+            />
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={3} fit lineHeight={1} textColor="black">
+              <Text>React Native Playground (https://rnplay.org)</Text>
+            </Heading>
+            <Image src={images.rnplay.replace("/", "")} margin="0px auto 40px" width="1024px"/>
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={3} fit lineHeight={1} textColor="black">
+              <Text>React Native Playground App</Text>
+            </Heading>
+            <Image src={images.rnplayApp.replace("/", "")} margin="0px auto 40px" width="1024px"/>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
             <Heading size={3} fit lineHeight={1} textColor="black">
