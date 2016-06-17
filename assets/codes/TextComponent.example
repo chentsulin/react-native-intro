@@ -1,9 +1,8 @@
 import React from 'react';
-import { AppRegistry, Image } from 'react-native';
+import { AppRegistry, Text } from 'react-native';
 
 const App = () => (
-  <Image source={require('./img/check.png')} />
+  <Text>Hello World!</Text>
 );
-
 
 AppRegistry.registerComponent('MyApp', () => App);

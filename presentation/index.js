@@ -462,6 +462,12 @@ export default class Presentation extends React.Component {
               <ListItem>
                 <Link href="http://microsoft.github.io/code-push/">Code Push</Link>
               </ListItem>
+              <ListItem>
+                <Link href="https://github.com/brentvatne/hard-react-native-problems">hard-react-native-problems</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="http://reactnative.cc/">React Native Newsletter</Link>
+              </ListItem>
             </List>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
