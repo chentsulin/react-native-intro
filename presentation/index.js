@@ -410,10 +410,10 @@ export default class Presentation extends React.Component {
                 <Link href="https://github.com/exponentjs/ex-navigator">ex-navigator </Link>(built on top of Navigator)
               </ListItem>
               <ListItem>
-                <Link href="https://github.com/aksonov/react-native-router-flux">react-native-router-flux</Link>(built on top of ExNavigator)
+                <Link href="https://github.com/ericvicenti/navigation-rfc">NavigationExperimental</Link>
               </ListItem>
               <ListItem>
-                <Link href="https://github.com/ericvicenti/navigation-rfc">NavigationExperimental</Link>
+                <Link href="https://github.com/aksonov/react-native-router-flux">react-native-router-flux</Link>(built on top of NavigationExperimental)
               </ListItem>
               <ListItem>
                 <Link href="https://github.com/exponentjs/ex-navigation">ex-navigation</Link> (built on top of NavigationExperimental)
