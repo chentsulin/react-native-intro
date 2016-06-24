@@ -76,10 +76,10 @@ export default class Presentation extends React.Component {
                 </Heading>
                 <List>
                   <ListItem>
-                    <Link href="https://github.com/chentsulin">chentsulin@github</Link>
+                    <Link target="_blank" href="https://github.com/chentsulin">chentsulin@github</Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="https://twitter.com/chentsulin">chentsulin@twitter</Link>
+                    <Link target="_blank" href="https://twitter.com/chentsulin">chentsulin@twitter</Link>
                   </ListItem>
                 </List>
               </Fill>
@@ -128,7 +128,7 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["zoom"]} bgColor="black">
             <Heading size={1} fit caps lineHeight={1} textColor="white">
-              <Link href="https://facebook.github.io/react-native/showcase.html">Show Case</Link>
+              <Link target="_blank" href="https://facebook.github.io/react-native/showcase.html">Show Case</Link>
             </Heading>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
@@ -154,7 +154,7 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
             <Text>See {" "}
-              <Link href="https://facebook.github.io/react-native/docs/getting-started.html">
+              <Link target="_blank" href="https://facebook.github.io/react-native/docs/getting-started.html">
                 docs - Getting Started
               </Link>
             </Text>
@@ -219,17 +219,17 @@ export default class Presentation extends React.Component {
             </Heading>
             <List>
               <Appear><ListItem>
-                <Link href="https://speakerdeck.com/vjeux/react-css-in-js">CSS in JS</Link> (by <Link href="https://www.github.com/vjeux">vjeux</Link>)
+                <Link target="_blank" href="https://speakerdeck.com/vjeux/react-css-in-js">CSS in JS</Link> (by <Link target="_blank" href="https://www.github.com/vjeux">vjeux</Link>)
               </ListItem></Appear>
               <Appear><ListItem>
-                <Link href="http://flexboxfroggy.com/">Flexbox</Link>
+                <Link target="_blank" href="http://flexboxfroggy.com/">Flexbox</Link>
               </ListItem></Appear>
               <Appear><ListItem>
-                Implemented via <Link href="https://github.com/facebook/css-layout">css-layout</Link>
+                Implemented via <Link target="_blank" href="https://github.com/facebook/css-layout">css-layout</Link>
               </ListItem></Appear>
               <Appear><ListItem>style props accept array</ListItem></Appear>
               <Appear><ListItem>style props accept falsy values</ListItem></Appear>
-              <Appear><ListItem><Link href="https://facebook.github.io/react-native/docs/style.html">docs</Link></ListItem></Appear>
+              <Appear><ListItem><Link target="_blank" href="https://facebook.github.io/react-native/docs/style.html">docs</Link></ListItem></Appear>
             </List>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
@@ -320,7 +320,7 @@ export default class Presentation extends React.Component {
               <Text textSize="1em">Remote JS Debugging (chrome v8)</Text>
             </Heading>
             <List>
-              <ListItem>open http://localhost:8081/debugger-ui</ListItem>
+              <ListItem>open <Link target="_blank" href="http://localhost:8081/debugger-ui">http://localhost:8081/debugger-ui</Link></ListItem>
               <ListItem>can print something to console</ListItem>
               <ListItem>can see thrown errors</ListItem>
               <ListItem>can pause on exceptions</ListItem>
@@ -355,7 +355,7 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
             <Heading size={3} fit lineHeight={1} textColor="black">
-              <Text>React Native Playground (https://rnplay.org)</Text>
+            <Text>React Native Playground (<Link target="_blank" href="https://rnplay.org">https://rnplay.org</Link>)</Text>
             </Heading>
             <Image src={images.rnplay.replace("/", "")} margin="0px auto 40px" width="1024px"/>
           </Slide>
@@ -374,50 +374,50 @@ export default class Presentation extends React.Component {
               <Fill>
                 <List>
                   <ListItem>
-                    <Link href="https://github.com/mastermoo/react-native-action-button">react-native-action-button</Link>
+                    <Link target="_blank" href="https://github.com/mastermoo/react-native-action-button">react-native-action-button</Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="https://github.com/FuYaoDe/react-native-app-intro">react-native-app-intro</Link>
+                    <Link target="_blank" href="https://github.com/FuYaoDe/react-native-app-intro">react-native-app-intro</Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="https://github.com/react-native-fellowship/react-native-side-menu">react-native-side-menu</Link>
+                    <Link target="_blank" href="https://github.com/react-native-fellowship/react-native-side-menu">react-native-side-menu</Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="https://github.com/aakashns/react-native-dialogs">react-native-dialogs</Link>
+                    <Link target="_blank" href="https://github.com/aakashns/react-native-dialogs">react-native-dialogs</Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="https://github.com/FaridSafi/react-native-gifted-form">react-native-gifted-form</Link>
+                    <Link target="_blank" href="https://github.com/FaridSafi/react-native-gifted-form">react-native-gifted-form</Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="https://github.com/oblador/react-native-lightbox">react-native-lightbox</Link>
+                    <Link target="_blank" href="https://github.com/oblador/react-native-lightbox">react-native-lightbox</Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="https://github.com/dancormier/react-native-swipeout">react-native-swipeout</Link>
+                    <Link target="_blank" href="https://github.com/dancormier/react-native-swipeout">react-native-swipeout</Link>
                   </ListItem>
                 </List>
               </Fill>
               <Fill>
                 <List>
                   <ListItem>
-                    <Link href="https://github.com/react-native-material-design/react-native-material-design">react-native-material-design</Link>
+                    <Link target="_blank" href="https://github.com/react-native-material-design/react-native-material-design">react-native-material-design</Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="https://github.com/lwansbrough/react-native-camera">react-native-camera</Link>
+                    <Link target="_blank" href="https://github.com/lwansbrough/react-native-camera">react-native-camera</Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="https://github.com/brentvatne/react-native-video">react-native-video</Link>
+                    <Link target="_blank" href="https://github.com/brentvatne/react-native-video">react-native-video</Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="https://github.com/maxs15/react-native-spinkit">react-native-spinkit</Link>
+                    <Link target="_blank" href="https://github.com/maxs15/react-native-spinkit">react-native-spinkit</Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="https://github.com/leecade/react-native-swiper">react-native-swiper</Link>
+                    <Link target="_blank" href="https://github.com/leecade/react-native-swiper">react-native-swiper</Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="https://github.com/FaridSafi/react-native-gifted-messenger">react-native-gifted-messenger</Link>
+                    <Link target="_blank" href="https://github.com/FaridSafi/react-native-gifted-messenger">react-native-gifted-messenger</Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="https://github.com/marcshilling/react-native-image-picker">react-native-image-picker</Link>
+                    <Link target="_blank" href="https://github.com/marcshilling/react-native-image-picker">react-native-image-picker</Link>
                   </ListItem>
                 </List>
               </Fill>
@@ -430,19 +430,19 @@ export default class Presentation extends React.Component {
             </Heading>
             <List>
               <ListItem>
-                <Link href="https://facebook.github.io/react-native/docs/navigator.html">Navigator</Link>
+                <Link target="_blank" href="https://facebook.github.io/react-native/docs/navigator.html">Navigator</Link>
               </ListItem>
               <ListItem>
-                <Link href="https://github.com/exponentjs/ex-navigator">ex-navigator </Link>(built on top of Navigator)
+                <Link target="_blank" href="https://github.com/exponentjs/ex-navigator">ex-navigator </Link>(built on top of Navigator)
               </ListItem>
               <ListItem>
-                <Link href="https://github.com/ericvicenti/navigation-rfc">NavigationExperimental</Link>
+                <Link target="_blank" href="https://github.com/ericvicenti/navigation-rfc">NavigationExperimental</Link>
               </ListItem>
               <ListItem>
-                <Link href="https://github.com/aksonov/react-native-router-flux">react-native-router-flux</Link>(built on top of NavigationExperimental)
+                <Link target="_blank" href="https://github.com/aksonov/react-native-router-flux">react-native-router-flux</Link>(built on top of NavigationExperimental)
               </ListItem>
               <ListItem>
-                <Link href="https://github.com/exponentjs/ex-navigation">ex-navigation</Link> (built on top of NavigationExperimental)
+                <Link target="_blank" href="https://github.com/exponentjs/ex-navigation">ex-navigation</Link> (built on top of NavigationExperimental)
               </ListItem>
             </List>
           </Slide>
@@ -463,7 +463,7 @@ export default class Presentation extends React.Component {
               <Text>Work together with Redux</Text>
             </Heading>
             <Text>See {" "}
-              <Link href="https://github.com/chentsulin/react-native-counter-ios-android">
+              <Link target="_blank" href="https://github.com/chentsulin/react-native-counter-ios-android">
                 react-native-counter-ios-android
               </Link>
             </Text>
@@ -474,25 +474,25 @@ export default class Presentation extends React.Component {
             </Heading>
             <List>
               <ListItem>
-                <Link href="https://facebook.github.io/react-native/docs/getting-started.html">Official Docs</Link>
+                <Link target="_blank" href="https://facebook.github.io/react-native/docs/getting-started.html">Official Docs</Link>
               </ListItem>
               <ListItem>
-                <Link href="http://reactnative.cn/docs/0.27/getting-started.html">簡中文件</Link>
+                <Link target="_blank" href="http://reactnative.cn/docs/0.27/getting-started.html">簡中文件</Link>
               </ListItem>
               <ListItem>
-                <Link href="https://github.com/jondot/awesome-react-native">Awesome React Native</Link>
+                <Link target="_blank" href="https://github.com/jondot/awesome-react-native">Awesome React Native</Link>
               </ListItem>
               <ListItem>
-                <Link href="https://rnplay.org/">RN playground</Link>
+                <Link target="_blank" href="https://rnplay.org/">RN playground</Link>
               </ListItem>
               <ListItem>
-                <Link href="http://microsoft.github.io/code-push/">Code Push</Link>
+                <Link target="_blank" href="http://microsoft.github.io/code-push/">Code Push</Link>
               </ListItem>
               <ListItem>
-                <Link href="https://github.com/brentvatne/hard-react-native-problems">hard-react-native-problems</Link>
+                <Link target="_blank" href="https://github.com/brentvatne/hard-react-native-problems">hard-react-native-problems</Link>
               </ListItem>
               <ListItem>
-                <Link href="http://reactnative.cc/">React Native Newsletter</Link>
+                <Link target="_blank" href="http://reactnative.cc/">React Native Newsletter</Link>
               </ListItem>
             </List>
           </Slide>
@@ -502,16 +502,16 @@ export default class Presentation extends React.Component {
             </Heading>
             <List>
               <ListItem>
-                <Link href="https://github.com/facebook/react-native/tree/master/Examples/UIExplorer">UIExplorer</Link>
+                <Link target="_blank" href="https://github.com/facebook/react-native/tree/master/Examples/UIExplorer">UIExplorer</Link>
               </ListItem>
               <ListItem>
-                <Link href="https://github.com/facebook/react-native/tree/master/Examples/2048">2048</Link>
+                <Link target="_blank" href="https://github.com/facebook/react-native/tree/master/Examples/2048">2048</Link>
               </ListItem>
               <ListItem>
-                <Link href="https://github.com/facebook/react-native/tree/master/Examples/Movies">Movie</Link>
+                <Link target="_blank" href="https://github.com/facebook/react-native/tree/master/Examples/Movies">Movie</Link>
               </ListItem>
               <ListItem>
-                <Link href="https://github.com/fbsamples/f8app">f8app</Link>
+                <Link target="_blank" href="https://github.com/fbsamples/f8app">f8app</Link>
               </ListItem>
             </List>
           </Slide>
