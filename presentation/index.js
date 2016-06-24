@@ -32,6 +32,7 @@ require("spectacle/lib/themes/default/index.css");
 
 
 const images = {
+  ctlin: require("../assets/ctlin.jpg"),
   reactNative: require("../assets/react-native.png"),
   reactNativeGithub: require("../assets/github.png"),
   reactNativeNpm: require("../assets/npm.png"),
@@ -46,7 +47,7 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-  primary: "#ff4081"
+  primary: "#ea6143"
 });
 
 export default class Presentation extends React.Component {
@@ -62,6 +63,27 @@ export default class Presentation extends React.Component {
               Intro
             </Heading>
             <Text textSize="1.5em" margin="20px 0px 0px" bold>@chentsulin</Text>
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Layout>
+              <Fill>
+                <Image src={images.ctlin.replace("/", "")} margin="0px auto" style={{borderRadius: "50%"}} />
+              </Fill>
+              <Fill>
+                <Heading size={3} lineHeight={1} textColor="black">
+                  <Text textSize="1.5em">C. T. Lin</Text>
+                  <Text textSize="0.4em">Full Stack JS Architect@Yoctol</Text>
+                </Heading>
+                <List>
+                  <ListItem>
+                    <Link href="https://github.com/chentsulin">chentsulin@github</Link>
+                  </ListItem>
+                  <ListItem>
+                    <Link href="https://twitter.com/chentsulin">chentsulin@twitter</Link>
+                  </ListItem>
+                </List>
+              </Fill>
+            </Layout>
           </Slide>
           <Slide transition={["slide"]} bgImage={images.reactNative.replace("/", "")} notes="You can even put notes on your slide. How awesome is that?" />
           <Slide transition={["zoom", "fade"]} bgColor="primary">
@@ -196,8 +218,12 @@ export default class Presentation extends React.Component {
               <Text>Style in React Native</Text>
             </Heading>
             <List>
-              <Appear><ListItem>CSS in JS</ListItem></Appear>
-              <Appear><ListItem>Flexbox</ListItem></Appear>
+              <Appear><ListItem>
+                <Link href="https://speakerdeck.com/vjeux/react-css-in-js">CSS in JS</Link> (by <Link href="https://www.github.com/vjeux">vjeux</Link>)
+              </ListItem></Appear>
+              <Appear><ListItem>
+                <Link href="http://flexboxfroggy.com/">Flexbox</Link>
+              </ListItem></Appear>
               <Appear><ListItem>
                 Implemented via <Link href="https://github.com/facebook/css-layout">css-layout</Link>
               </ListItem></Appear>
