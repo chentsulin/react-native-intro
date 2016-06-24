@@ -83,7 +83,7 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
             <Appear fid="3">
-              <Text textSize="1.5em" margin="20px 0px 0px" bold textColor="white">Now - 0.27.2</Text>
+              <Text textSize="1.5em" margin="20px 0px 0px" bold textColor="white">Now - 0.28.0</Text>
             </Appear>
           </Slide>
           <Slide transition={["slide"]} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
