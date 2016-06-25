@@ -76,6 +76,9 @@ export default class Presentation extends React.Component {
                 </Heading>
                 <List>
                   <ListItem>
+                    Node, React, GraphQL..
+                  </ListItem>
+                  <ListItem>
                     <Link target="_blank" href="https://github.com/chentsulin">chentsulin@github</Link>
                   </ListItem>
                   <ListItem>
